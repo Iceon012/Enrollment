@@ -1,0 +1,14 @@
+.img {
+  background-image: url("kape.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: #456390;
+}
+
+.img2 {
+  background-image: url("kape3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: #456390;
+}
+
