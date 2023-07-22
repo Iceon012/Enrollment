@@ -1,9 +1,19 @@
 .img {
+  height: auto;
+  padding-top: 3rem;
   background-image: url("KAPE.jpg");
   background-size: cover;
   background-position: center center;
   background-color: #456390;
 }
+/* 
+@media only screen and (max-width: 991px) {
+  .img {
+    padding-top: 1rem;
+    height: auto;
+}
+} */
+
 
 .img2 {
   background-image: url("kape3.jpg");
@@ -11,4 +21,6 @@
   background-position: center center;
   background-color: #456390;
 }
+
+
 

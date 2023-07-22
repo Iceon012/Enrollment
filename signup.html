@@ -15,14 +15,14 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row vh-100">
+        <div class="row">
             <div class="col-md-6 img">
 
             </div>
             <div class="col-md-6 alert p-3 " style="background-color: rgb(255, 255, 255);">
 
                 <div class="row">
-                    <div class="col-md-10 p-5">
+                    <div class="col-md-12 p-5">
                         <!-- <br><br>
                         <h4 class="text-center">
                             Northern Luzon Adventist College ACADEMY
@@ -34,8 +34,10 @@
                             <b><i class="fa fa-bullhorn" aria-hidden="true"></i> Announcement!</b>
                             <br>
                             * Students who plans to stay in the village MUST report to the Student Services Office(SSO)
+                            <hr>
+                            <b>For more inquiries about Enrollment</b>
                             <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">Click Here</a>
+                                aria-controls="offcanvasRight">Click Here</a>
                         </div>
                         <ul class="nav nav-underline justify-content-left">
                             <li class="nav-item">
@@ -48,30 +50,30 @@
                             <div class="col-md">
                                 <label for="" class="p-2">LRN Number:</label>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
+                                    <input type="number" class="form-control" id="floatingInput"
                                         placeholder="name@example.com">
-                                    <label for="floatingInput">.....</label>
+                                    <label for="floatingInput">Ref#</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
+                                    <input type="text" class="form-control" id="floatingInput"
                                         placeholder="name@example.com">
                                     <label for="floatingInput">Firstname</label>
                                 </div>
                             </div>
                             <div class="col-md">
                                 <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="floatingPassword"
+                                    <input type="text" class="form-control" id="floatingPassword"
                                         placeholder="Password">
                                     <label for="floatingPassword">Middle Name</label>
                                 </div>
                             </div>
                             <div class="col-md">
                                 <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="floatingPassword"
+                                    <input type="text" class="form-control" id="floatingPassword"
                                         placeholder="Password">
                                     <label for="floatingPassword">Lastname</label>
                                 </div>
@@ -88,10 +90,26 @@
                         </div>
                         <div class="row">
                             <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="select" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Grade</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                    <label for="floatingSelect">Grade Level:</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>HUMSS</option>
+                                        <option value="1">ABM</option>
+                                        <option value="2">STEM</option>
+                                    </select>
+                                    <label for="floatingSelect">Strand:</label>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +121,7 @@
                             </div>
                             <div class="col-md-4">
                                 <a type="button" class="btn btn-outline-primary form-control btn-sm mb-3 p-2 rounded-5"
-                                    style="font-size: 15px;" href="index.html">Login</a>
+                                    style="font-size: 15px;" href="index.html">Sign in</a>
                             </div>
                         </div>
 
