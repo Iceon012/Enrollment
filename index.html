@@ -40,7 +40,8 @@
                             <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight">Click Here</a>
                         </div>
-                        <h1 class="mb-3 b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">Student Login</h1>
+                        <h1 class="mb-3 b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">
+                            Student Login</h1>
                         <label for="" class="p-2">Username:</label>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -64,8 +65,8 @@
                         <hr>
 
                         <button type="button" class="btn btn-outline-primary form-control mb-3 rounded-2"
-                            style="font-size: 15px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"
-                            aria-controls="offcanvasRight2">
+                            style="font-size: 15px;" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             <i class="fa fa-file-text" aria-hidden="true"></i>
                             Admission Requierments
                         </button>
@@ -121,83 +122,104 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body img2">
-                                <div class="bg-light rounded-2">
-                                    <div>
-                                        <h4 class="text-center p-3">Admission Requirements</h4>
+                                
+                            </div>
+                        </div>
+                                                    
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                    <ul class="list-group col-12">
-                                        <li class="list-group-item list-group-item-info h6"><b>A. JUNIOR/SENIOR HIGH
-                                                SCHOOL (FOR NEW STUDENTS ONLY)</b>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <ul>
-                                                <li>Photocopy of PSA Birth Certificate (4 copies with
-                                                    parent/guardian’s signature)</li>
-                                                <li>Good Moral Certificate</li>
-                                                <li>Original Copy of SF9/F138/ Report Card</li>
-                                                <li>Original Copy of SF10/F137 (<b>claim request letter at the
-                                                        Academy Registrar’s Office</b>)</li>
-                                                <li>ESC Certificate (<strong>for Grade 8-12 transferees from
-                                                        Private-ESC institutions only</strong>)</li>
-                                                <li>Recent 2x2 ID Picture (<b>white background; 4 copies</b>)</li>
-                                                <li>Photocopy of vaccination card (<b>OPTIONAL; If the student is
-                                                        vaccinated</b>)</li>
-                                                <li>Duly signed and accomplished Student’s/Parent’s Guidelines
-                                                    Contract Form. (<b>Print your Contract form on a legal (8.5x13)
-                                                        sized bond paper for presentation and submission to the
-                                                        Academy Office.</b>)</li>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item"><b>(For GRADE 7 Applicants ONLY) APPLICATION FOR
-                                                ESC (Educational Service Contracting).</b></li>
-                                        <br>
-                                        <ul>
-                                            <li>Latest Income Tax Return for the previous year or Certificate of Tax
-                                                Exemption or Municipal Certification of Unemployment of
-                                                Parents/Legal Guardian (for incoming Grade 7 only) <br><b>NOTE:
-                                                    <u>ESC Application Form</u> will be provided by the Academy
-                                                    Registrar.</b><br><br>
-                                                For more details please visit our fb page to set an appointment with
-                                                our working staff: <a href="https://bit.ly/3K4uldO">NLAC Academy</a>
-                                                or visit the Academy Office.
-                                            </li>
-                                        </ul>
-
-                                    </ul>
-                                    <br>
-                                    <ul class="list-group col-12">
-                                        <li class="list-group-item list-group-item-info h6"><b>B. OLD/RETURNING
-                                                STUDENTS</b></li>
-                                        <li class="list-group-item">
-                                            <ul>
-                                                <li>Duly signed and accomplished Student’s/Parent’s Guidelines
-                                                    Contract Form. (<b>Print your Contract form on a legal (8.5x13)
-                                                        sized bond paper for presentation and submission to the
-                                                        Academy Office</b>)</li>
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <br>
-
-                                    <ul class="list-group col-12">
-                                        <li class="list-group-item list-group-item-info h6"><b>C. FOR FOREIGN
-                                                STUDENTS</b></li>
-                                        <li class="list-group-item">
-                                            <ul>
-                                                <li>Duly accomplished Student’s Personal History Statement(PHS)
+                                    <div class="modal-body img1">
+                                        <div class="bg-light rounded-2">
+                                            <div>
+                                                <h4 class="p-3">Admission Requirements</h4>
+                                            </div>
+                                            <ul class="list-group">
+                                                <li class="list-group-item list-group-item-info h6"><b>A. JUNIOR/SENIOR HIGH
+                                                        SCHOOL (FOR NEW STUDENTS ONLY)</b>
                                                 </li>
-                                                <li>A notarized affidavit of support or notarized notice of
-                                                    scholarship grant.</li>
-                                                <li>Authenticated student’s scholastic records by the Department
-                                                    of Foreign Affairs or counterpart agency from country of
-                                                    origin</li>
-                                                <li>Student passport and Birth Certificate</li>
-                                                <li>Letter of Sponsorship with contact number</li>
+                                                <li class="list-group-item">
+                                                    <ul>
+                                                        <li>Photocopy of PSA Birth Certificate (4 copies with
+                                                            parent/guardian’s signature)</li>
+                                                        <li>Good Moral Certificate</li>
+                                                        <li>Original Copy of SF9/F138/ Report Card</li>
+                                                        <li>Original Copy of SF10/F137 (<b>claim request letter at the
+                                                                Academy Registrar’s Office</b>)</li>
+                                                        <li>ESC Certificate (<strong>for Grade 8-12 transferees from
+                                                                Private-ESC institutions only</strong>)</li>
+                                                        <li>Recent 2x2 ID Picture (<b>white background; 4 copies</b>)</li>
+                                                        <li>Photocopy of vaccination card (<b>OPTIONAL; If the student is
+                                                                vaccinated</b>)</li>
+                                                        <li>Duly signed and accomplished Student’s/Parent’s Guidelines
+                                                            Contract Form. (<b>Print your Contract form on a legal (8.5x13)
+                                                                sized bond paper for presentation and submission to the
+                                                                Academy Office.</b>)</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item"><b>(For GRADE 7 Applicants ONLY) APPLICATION FOR
+                                                        ESC (Educational Service Contracting).</b></li>
+                                                <br>
+                                                <ul>
+                                                    <li>Latest Income Tax Return for the previous year or Certificate of Tax
+                                                        Exemption or Municipal Certification of Unemployment of
+                                                        Parents/Legal Guardian (for incoming Grade 7 only) <br><b>NOTE:
+                                                            <u>ESC Application Form</u> will be provided by the Academy
+                                                            Registrar.</b><br><br>
+                                                        For more details please visit our fb page to set an appointment with
+                                                        our working staff: <a href="https://bit.ly/3K4uldO">NLAC Academy</a>
+                                                        or visit the Academy Office.
+                                                    </li>
+                                                </ul>
+        
                                             </ul>
-                                        </li>
-                                    </ul>
-
+                                            <br>
+                                            <ul class="list-group col-12">
+                                                <li class="list-group-item list-group-item-info h6"><b>B. OLD/RETURNING
+                                                        STUDENTS</b></li>
+                                                <li class="list-group-item">
+                                                    <ul>
+                                                        <li>Duly signed and accomplished Student’s/Parent’s Guidelines
+                                                            Contract Form. (<b>Print your Contract form on a legal (8.5x13)
+                                                                sized bond paper for presentation and submission to the
+                                                                Academy Office</b>)</li>
+        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <br>
+        
+                                            <ul class="list-group col-12">
+                                                <li class="list-group-item list-group-item-info h6"><b>C. FOR FOREIGN
+                                                        STUDENTS</b></li>
+                                                <li class="list-group-item">
+                                                    <ul>
+                                                        <li>Duly accomplished Student’s Personal History Statement(PHS)
+                                                        </li>
+                                                        <li>A notarized affidavit of support or notarized notice of
+                                                            scholarship grant.</li>
+                                                        <li>Authenticated student’s scholastic records by the Department
+                                                            of Foreign Affairs or counterpart agency from country of
+                                                            origin</li>
+                                                        <li>Student passport and Birth Certificate</li>
+                                                        <li>Letter of Sponsorship with contact number</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+        
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <!-- <button type="button" class="btn btn-primary">OK</button> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
