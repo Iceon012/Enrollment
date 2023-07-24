@@ -13,5 +13,14 @@
   background-color: #456390;
 }
 
+.img3 {
+  background-image: url("watermark.png");
+  background-size: cover;
+  background-position: center center;
+  /* background-color: #456390; */
+}
 
 
+.table-success, .table-success > th, .table-success > td {
+    background-color: #c3e6cb;
+}

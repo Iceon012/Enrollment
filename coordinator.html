@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="dashboard.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="studentsummary.html">Report</a>
+                        <a class="nav-link" href="#">Report</a>
                     </li>
                 </ul>
-                <a class="navbar-text" href="index.html" style="text-decoration: none;">
+                <a class="navbar-text" href="userlogin.html" style="text-decoration: none;">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     Sign Out
                 </a>
@@ -43,13 +43,14 @@
     </nav>
     <br>
     <div class="container-fluid p-5 mt-5">
+        <h1 style="text-transform: uppercase; font-weight: 700;" class="mb-3">Subject Schedule Encoding</h1>
         <di class="row">
             <div class="col-md-6 mb-3">
-                <div class="card">
+                <div class="card bg-light">
                     <div class="card-body">
                         <form class="row g-3">
-                            <h1>Create Schedule</h1>
-                            <div class="col-md-12">
+                            
+                            <div class="col-md-12 mt-4">
                                 <div class="row">
                                     <div class="col-md-2">
                                         <label for="inputEmail4" class="form-label">Subject:</label>
@@ -69,31 +70,42 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                              <label for="inputAddress" class="form-label">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <h4>Consultation Schedule:</h4>
+                            <div class="col-6">
+                              <label for="inputAddress" class="form-label">From:</label>
+                              <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
                             </div>
-                            <div class="col-12">
-                              <label for="inputAddress2" class="form-label">Address 2</label>
-                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <div class="col-6">
+                                <label for="inputAddress" class="form-label">To:</label>
+                                <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              </div>
+                            <div class="col-6">
+                                <label for="inputState" class="form-label">Day:</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Monday</option>
+                                  <option>...</option>
+                                </select>
                             </div>
+                            <div class="col-6">
+                                <label for="inputState" class="form-label">Room:</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>C1</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
                             <div class="col-md-6">
-                              <label for="inputCity" class="form-label">City</label>
+                              <label for="inputCity" class="form-label">Number of Students:</label>
                               <input type="text" class="form-control" id="inputCity">
                             </div>
-                            <div class="col-md-4">
-                              <label for="inputState" class="form-label">State</label>
-                              <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
-                            </div>
-                            <div class="col-md-2">
-                              <label for="inputZip" class="form-label">Zip</label>
-                              <input type="text" class="form-control" id="inputZip">
-                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Grade:</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>1</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
                             <div class="col-12">
-                              <button type="submit" class="btn btn-primary">Create Schedule</button>
+                              <button type="submit" class="btn btn-primary form-control"><i class="fa fa-plus-square" aria-hidden="true"></i> Create</button>
                             </div>
                           </form>
                     </div>
@@ -111,32 +123,41 @@
                     </div>
                 </div>
                 <div class="table-responsive">
-                    <table class="table table-borderless nowrap" style="width:100%; overflow: auto;">
+                    <table class="table table-hover nowrap" style="width:100%; overflow: auto; font-size: 14px;">
                         <thead>
                             <tr>
                                 <th class="text-bg-light">Subject</th>
-                                <th class="text-bg-light">Time / Schedule</th>
-                                <th class="text-bg-light">Instructor</th>
+                                <th class="text-bg-light">Unit</th>
+                                <th class="text-bg-light">Consultation Hours</th>
                                 <th class="text-bg-light">Room</th>
+                                <th class="text-bg-light">Instructor</th>
+                                <th class="text-bg-light">Class Size</th>
+                                <th class="text-bg-light">Grade</th>
                                 <th class="text-bg-light">#</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Filipino 7</td>
+                                <td>3</td>
                                 <td>7:30 - 9:00 a.m | T-Th</td>
-                                <td>Maria Clara</td>
                                 <td>C5</td>
+                                <td>Maria Clara</td>
+                                <td>50</td>
+                                <td>7</td>
                                 <td>
                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Makabayan 7</td>
-                                <td>2:00 - 3:00 p.m | T-Th</td>
-                                <td>Crisostomo Ibarra</td>
-                                <td>C2</td>
+                                <td>English 7</td>
+                                <td>3</td>
+                                <td>7:30 - 9:00 a.m | T-Th</td>
+                                <td>C5</td>
+                                <td></td>
+                                <td>50</td>
+                                <td>7</td>
                                 <td>
                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
