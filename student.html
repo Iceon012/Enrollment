@@ -22,7 +22,7 @@
 
             </div>
             <div class="col-md-3 bg-light p-5">
-<h1 style="font-size: 30px; font-weight: 600;">Enrollment Procedure</h1>
+                <h1 style="font-size: 30px; font-weight: 600;">Enrollment Procedure</h1>
                 <ol class="relative text-gray-800 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
                     <br><br>
                     <li class="mb-10 ml-6">
@@ -58,7 +58,7 @@
                                     d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
                             </svg>
                         </span>
-                        <a class="font-medium leading-tight text-blue-500" href="">Upload Proof of Payment</a>
+                        <a class="font-medium leading-tight text-blue-500" href="proof.html">Upload Proof of Payment</a>
                         <p class="text-sm">Step details here</p>
                     </li>
                     <br><br><br>
@@ -79,47 +79,74 @@
             </div>
             <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-12 alert p-5 rounded-2">
+                    <div class="col-md-12 alert p-5 rounded-2 mt-3">
 
-                        <!-- <h4 class="text-left">
-                            Northern Luzon Adventist College ACADEMY
-                            <br>
-                            Online Enrollment Portal
-                        </h4>
-                        <hr class="border border-1 border-primary"> -->
-                        <div class="alert alert-info shadow" role="alert">
-                            <b><i class="fa fa-bullhorn" aria-hidden="true"></i> Announcement!</b>
-                            <br>
-                            Northern Luzon Adventist College Academy is now open for ENROLLMENT for the School Year
-                            2023-2024.
-                            <hr>
-                            <b>For more inquiries about Enrollment</b>
-                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight">Click Here</a>
-                        </div>
-                        <h1 class="mb-3 b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">
-                            Student Login</h1>
-                        <label for="" class="p-2">Username:</label>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">********</label>
-                        </div>
-                        <label for="" class="p-2">Registration Reference Number:</label>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">********</label>
-                        </div>
-                        <div class="row">
-                            <div class="col-md">
-                                <a type="button" class="btn btn-primary form-control btn-sm mb-3 p-2 rounded-5"
-                                    style="font-size: 15px;" href="student.html">Sign in</a>
+                        <h1 class="mb-5" style="font-size: 30px;">Personal Information</h1>
+                        <form>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="email" name="floating_email" id="floating_email"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="floating_email"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                                    address</label>
                             </div>
-                            <div class="col-md">
-                                <a type="button" class="btn btn-outline-primary form-control btn-sm mb-3 p-2 rounded-5"
-                                    style="font-size: 15px;" href="signup.html">Create Account</a>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="password" name="floating_password" id="floating_password"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="floating_password"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
                             </div>
-                        </div>
-                        <hr>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="password" name="repeat_password" id="floating_repeat_password"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="floating_repeat_password"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm
+                                    password</label>
+                            </div>
+                            <div class="grid md:grid-cols-2 md:gap-6">
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="text" name="floating_first_name" id="floating_first_name"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="floating_first_name"
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                                        name</label>
+                                </div>
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="text" name="floating_last_name" id="floating_last_name"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="floating_last_name"
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                                        name</label>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 md:gap-6">
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone"
+                                        id="floating_phone"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="floating_phone"
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                                        number (123-456-7890)</label>
+                                </div>
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="text" name="floating_company" id="floating_company"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="floating_company"
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
+                                        (Ex. Google)</label>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                        </form>
+
 
                     </div>
                 </div>
