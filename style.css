@@ -28,7 +28,10 @@
   /* background-color: #456390; */
 }
 
-
 .table-success, .table-success > th, .table-success > td {
-    background-color: #c3e6cb;
+  background-color: #c3e6cb;
+}
+
+.strand {
+display:none;
 }

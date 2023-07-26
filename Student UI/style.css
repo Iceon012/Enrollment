@@ -32,3 +32,7 @@
 .table-success, .table-success > th, .table-success > td {
     background-color: #c3e6cb;
 }
+
+.strand {
+  display:none;
+}

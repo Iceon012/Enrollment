@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,10 +19,10 @@
                 <br><br><br><br>
             </div>
             <div class="col-md-7 alert p-3 " style="background-color: rgb(255, 255, 255);">
-
                 <div class="row">
                     <div class="col-md-12 p-5">
-                        <h1 class="b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">SIGN UP FORM</h1>
+                        <h1 class="b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">SIGN UP
+                            FORM</h1>
                         <div class="row">
                             <div class="col-md">
                                 <label for="" class="p-2">LRN Number:</label>
@@ -42,7 +41,7 @@
                                     <label for="floatingInput">Firstname</label>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="row">
                             <div class="col-md">
@@ -52,7 +51,7 @@
                                     <label for="floatingPassword">Middle Name</label>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="row">
                             <div class="col-md">
@@ -74,27 +73,32 @@
                         </div>
                         <div class="row">
                             <div class="col-md">
-                                <div class="form-floating">
+                                <div class="form-floating mb-3">
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example">
-                                        <option selected>1</option>
-                                        <option value="1">2</option>
-                                        <option value="2">3</option>
-                                        <option value="3">4</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
                                     </select>
                                     <label for="floatingSelect">Grade Level:</label>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="row strand">
                             <div class="col-md">
                                 <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect"
+                                    <select class="form-select" id="floatingSelect1"
                                         aria-label="Floating label select example">
                                         <option selected>...</option>
-                                        <option >HUMSS</option>
+                                        <option>HUMSS</option>
                                         <option value="1">ABM</option>
                                         <option value="2">STEM</option>
                                     </select>
-                                    <label for="floatingSelect">Strand:</label>
+                                    <label for="floatingSelect1">Strand:</label>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +110,7 @@
                             </div>
                             <div class="col-md">
                                 <a type="button" class="btn btn-outline-primary form-control btn-sm p-2 rounded-5"
-                                    style="font-size: 15px;" href="index.html">Sign in</a>
+                                    style="font-size: 15px;" href="index.html">Cancel</a>
                             </div>
                         </div>
 
@@ -137,6 +141,22 @@
                 changeBgImage();
             });
         });
+
+        $('#floatingSelect').change(function () {
+            var selectedText = $('#floatingSelect option:selected').text();
+            var $element = $('.strand');
+            console.log(selectedText);
+
+            if (selectedText == '11' || selectedText == '12' ) {
+                $element.css('display', 'list-item');
+            }
+            else {
+                $element.css('display', 'none');
+            }
+        });
+
+
+
     </script>
 </body>
 
