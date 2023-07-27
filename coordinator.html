@@ -31,7 +31,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Report</a>
+                        <a class="nav-link" href="classsched.html">Report</a>
                     </li>
                 </ul>
                 <a class="navbar-text" href="userlogin.html" style="text-decoration: none;">
@@ -45,52 +45,137 @@
     <div class="container-fluid p-5 mt-5">
         <h1 style="text-transform: uppercase; font-weight: 700;" class="mb-3">Subject Schedule Encoding</h1>
         <di class="row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <div class="card bg-light">
                     <div class="card-body">
                         <form class="row g-3">
                             
                             <div class="col-md-12 mt-4">
                                 <div class="row">
-                                    <div class="col-md-2">
-                                        <label for="inputEmail4" class="form-label">Subject:</label>
+                                    <div class="col-md-4">
+                                        <label for="inputEmail4" class="form-label" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Select Subject:</label>
                                     </div>
                                     <div class="col-md">
-                                        <input type="email" class="form-control" id="inputEmail4">
+                                        <label for="" id="displayElement"></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <!-- <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  
+                                                </button> -->
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                                                    class="fa fa-search"></i></span>
+                                                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                                                aria-describedby="inputGroup-sizing-default" placeholder="Search...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table id="myTable" class="table table-hover nowrap" style="width:100%; overflow: auto; font-size: 14px;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-bg-light">Subject</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Filipino 7</td>                                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>English 7</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <label for="inputEmail4" class="form-label">Instructor:</label>
+                                <div class="row text-left">
+                                    <div class="col-md-4">
+                                        <label for="inputEmail4" class="form-label" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Select Teacher:</label>
                                     </div>
                                     <div class="col-md">
-                                        <input type="email" class="form-control" id="inputEmail4">
+                                        <label for="" id="displayElement2"></label>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <!-- <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  
+                                                </button> -->
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                                                    class="fa fa-search"></i></span>
+                                                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                                                aria-describedby="inputGroup-sizing-default" placeholder="Search...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table id="myTable2" class="table table-hover nowrap" style="width:100%; overflow: auto; font-size: 14px;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-bg-light">Teacher</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Maria Clara</td>                                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Crisostomo Ibarra</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                             </div>
                             <h4>Consultation Schedule:</h4>
-                            <div class="col-6">
-                              <label for="inputAddress" class="form-label">From:</label>
-                              <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <div class="col-2 text-left">
+                                <label for="inputAddress" class="form-label">Time</label>
                             </div>
-                            <div class="col-6">
-                                <label for="inputAddress" class="form-label">To:</label>
-                                <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <div class="col-5">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="From">
+                            </div>
+                            <div class="col-5">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="To">
                               </div>
                             <div class="col-6">
                                 <label for="inputState" class="form-label">Day:</label>
-                                <select id="inputState" class="form-select">
-                                  <option selected>Monday</option>
-                                  <option>...</option>
+                                <select class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="selectedDay">
+                                    <!-- ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Mon" selected="selected">Mon</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="MonTue">MonTue</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="MonWed">MonWed</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="MonWedFri">MonWedFri</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="MonTueWed">MonTueWed</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Tue">Tue</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="TueThurs">TueThurs</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Wed">Wed</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="WedThurs">WedThurs</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Thurs">Thurs</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="ThursFri">ThursFri</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Fri">Fri</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Sun">Sun</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="SunMon">SunMon</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="Mon-Thurs">Mon-Thurs</option><!-- end ngRepeat: day in days --><option ng-repeat="day in days" class="ng-binding ng-scope" value="TBA">TBA</option><!-- end ngRepeat: day in days -->
                                 </select>
                             </div>
                             <div class="col-6">
                                 <label for="inputState" class="form-label">Room:</label>
-                                <select id="inputState" class="form-select">
-                                  <option selected>C1</option>
-                                  <option>...</option>
+                                <select class="form-control ng-pristine ng-valid ng-not-empty ng-touched" ng-model="selectedRoom">
+                                    <!-- ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C1" selected="selected">C1</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C2">C2</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C3">C3</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C5">C5</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C6">C6</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C7">C7</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C8">C8</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C9">C9</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C10">C10</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C11">C11</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="C12">C12</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="CLab1">CLab1</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="CLab2">CLab2</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="CLab3">CLab3</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="CLab4">CLab4</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="Lib AVR">Lib AVR</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="Lingap">Lingap</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="NB1">NB1</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="NB2">NB2</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="NB AVR">NB AVR</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="Simulation">Simulation</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="Psych">Psych</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="Pavilion">Pavilion</option><!-- end ngRepeat: rm in rooms --><option ng-repeat="rm in rooms" class="ng-binding ng-scope" value="AB Hall">AB Hall</option><!-- end ngRepeat: rm in rooms -->
                                 </select>
                               </div>
                             <div class="col-md-6">
@@ -100,8 +185,12 @@
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label">Grade:</label>
                                 <select id="inputState" class="form-select">
-                                  <option selected>1</option>
-                                  <option>...</option>
+                                  <option selected>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                  <option>11</option>
+                                  <option>12</option>
                                 </select>
                               </div>
                             <div class="col-12">
@@ -111,7 +200,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="input-group mb-3">
@@ -169,6 +258,32 @@
             </div>
         </di>
     </div>
+
+    <script>
+        function addClickListenerToTable(tableId, displayElementId) {
+            // Get the table
+            var table = document.getElementById(tableId);
+          
+            // Add event listener to each cell
+            for (var i = 0; i < table.rows.length; i++) {
+                for (var j = 0; j < table.rows[i].cells.length; j++) {
+                    table.rows[i].cells[j].addEventListener("click", function() {
+                        var cellData = this.innerHTML;
+                        // Get the element to display data
+                        var displayElement = document.getElementById(displayElementId);
+                        // Display cell data in the element
+                        displayElement.innerHTML = cellData;
+                    });
+                }
+            }
+        };
+    
+        window.onload = function() {
+            addClickListenerToTable("myTable", "displayElement");
+            addClickListenerToTable("myTable2", "displayElement2");
+        };
+    </script>
+    
 </body>
 
 </html>

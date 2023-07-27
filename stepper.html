@@ -50,14 +50,14 @@
                     </li>
                     <li class="mb-10 ml-6">
                         <span
-                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
-                            <svg class="w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                            class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                            <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                                <path
+                                    d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
                             </svg>
                         </span>
-                        <a class="font-medium leading-tight text-blue-500" href="tuition.html"> Tuition & Fees</a>
+                        <a class="font-medium leading-tight text-grey-500" href=""> Tuition & Fees</a>
                         <p class="text-sm">Step details here</p>
                     </li>
                     <li class="mb-10 ml-6">
@@ -69,10 +69,9 @@
                                     d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
                             </svg>
                         </span>
-                        <p class="font-medium leading-tight text-grey-500" href="proof.html">Upload Proof of Payment</p>
+                        <a class="font-medium leading-tight text-grey-500" href="">Upload Proof of Payment</a>
                         <p class="text-sm">Step details here</p>
                     </li>
-                    <br><br><br>
                     <li class="ml-6">
                         <span
                             class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
@@ -85,15 +84,96 @@
                         <h3 class="font-medium leading-tight">Approval Notification</h3>
                         <p class="text-sm">Step details here</p>
                     </li>
-                    <br><br><br><br>
-                    <li class="ml-6">
-                        <a href="index.html">Log-out</a>
-                    </li>
                 </ol>
 
             </div>
             <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 p-5">
+                        <h1 class="b-5" style="font-size: 35px; text-transform: uppercase; font-weight: 700;">Personal
+                            Information</h1>
+                        <br>
+                        <form>
+                            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                                <div>
+                                    <label for="first_name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">LRN No:</label>
+                                    <input type="text" id="first_name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="107119060016" readonly>
+                                </div>
+                                <div>
+                                    <label for="first_name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade Level:</label>
+                                    <input type="text" id="first_name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="8" readonly>
+                                </div>
+                            </div>
+                            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                                <div>
+                                    <label for="first_name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                                        name</label>
+                                    <input type="text" id="first_name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="Arvin" >
+                                </div>
+                                <div>
+                                    <label for="last_name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
+                                        name</label>
+                                    <input type="text" id="last_name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="Ayson" >
+                                </div>
+                                <div>
+                                    <label for="company"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Birthdate</label>
+                                    <input type="text" id="company"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="04-12-2000">
+                                </div>
+                                <div>
+                                    <label for="phone"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gender</label>
+                                    <input type="tel" id="phone"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="Male">
+                                </div>
+                                <div>
+                                    <label for="company"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                                    <input type="text" id="company"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        >
+                                </div>
+                                <div>
+                                    <label for="phone"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
+                                        number</label>
+                                    <input type="tel" id="phone"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="09612635002">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
+                                    address</label>
+                                <input type="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    value="a.ayson12345@gmail.com" readonly>
 
+                            </div>
+                        <a type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            href="tuition.html">Ok</a>
+                        </form>
+
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

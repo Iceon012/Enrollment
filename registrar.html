@@ -147,18 +147,6 @@
 
                             </button>
                         </li>
-                        <li class="mr-2" role="presentation">
-                            <button
-                                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                                id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
-                                aria-controls="settings" aria-selected="false">Officially Enrolled</button>
-                        </li>
-                        <!-- <li role="presentation">
-                            <button
-                                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                                id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab"
-                                aria-controls="contacts" aria-selected="false">Contacts</button>
-                        </li> -->
                     </ul>
                 </div>
                 <div id="myTabContent">
@@ -234,11 +222,11 @@
                                     </td>
                                     <td class="px-6 py-4">
                                         <button type="button"
-                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Approve</button>
-                                        <button type="button"
-                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                             data-modal-target="popup-modal"
-                                            data-modal-toggle="popup-modal">Delete</button>
+                                            data-modal-toggle="popup-modal"
+                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Approve
+                                        </button>
 
                                     </td>
                                 </tr>
@@ -262,8 +250,6 @@
                                     <td class="px-6 py-4">
                                         <button type="button"
                                             class="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Approve</button>
-                                        <button type="button"
-                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Delete</button>
 
                                     </td>
                                 </tr>
@@ -287,8 +273,6 @@
                                     <td class="px-6 py-4">
                                         <button type="button"
                                             class="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Approve</button>
-                                        <button type="button"
-                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Delete</button>
 
                                     </td>
                                 </tr>
@@ -312,9 +296,6 @@
                                     <td class="px-6 py-4">
                                         <button type="button"
                                             class="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Approve</button>
-                                        <button type="button"
-                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Delete</button>
-
                                     </td>
                                 </tr>
                             </tbody>
@@ -359,14 +340,27 @@
                                     <th scope="col" class="px-6 py-3">
                                         Grade
                                     </th>
+                                    
                                     <th scope="col" class="px-6 py-3">
-                                        Personal Info.
+                                        Email
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Enrollment Approval
+                                        Password
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Contact No.
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Registration
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Payment Approval
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Officially Enrolled
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        
                                     </th>
                                 </tr>
                             </thead>
@@ -379,18 +373,39 @@
                                     <td class="px-6 py-4">
                                         8
                                     </td>
+                                    
                                     <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
-                                            &#x2713; July 31, 2023</span>
+                                        a.ayson12345@gmail.com
+
                                     </td>
                                     <td class="px-6 py-4">
+                                        iceon012
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        09612635220
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
                                         <span
-                                            class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
-                                            &#x2713; August 01, 2023</span>
+                                            class="bg-green-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500">
+                                            &#x2713;</span><br>
+                                             23-07-31
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        <span
+                                            class="bg-green-400 text-white  text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500">
+                                            &#x2713; </span><br>
+                                            2023-08-01
                                     </td>
                                     <td>
-
+                                        
+                                    </td>
+                                    <td>
+                                        <button type="button"
+                                            data-modal-target="popup-modal"
+                                            data-modal-toggle="popup-modal"
+                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Delete
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr
@@ -401,115 +416,36 @@
                                     <td class="px-6 py-4">
                                         8
                                     </td>
-                                    <td class="px-6 py-4">
-                                        <span
-                                            class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
-                                            &#x2713; July 31, 2023</span>
-                                    </td>
-                                    <td class="px-6 py-4">
 
-                                    </td>
-                                    <td>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel"
-                        aria-labelledby="settings-tab">
-                        <div class="row">
-                            <div class="col-md">
-
-                                <form class="flex items-center">
-                                    <label for="simple-search" class="sr-only">Search</label>
-                                    <div class="relative w-full">
-                                        <div
-                                            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                                <path stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2"
-                                                    d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2" />
-                                            </svg>
-                                        </div>
-                                        <input type="text" id="simple-search"
-                                            class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                            placeholder="Search student name..." required>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
-
-
-                            <br>
-
-                            <thead
-                                class="text-xs text-left text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400">
-                                <tr>
-                                    <th scope="col" class="px-6 py-3">
-                                        Name
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Grade
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Contact
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Email
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Password
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Approval Date
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-gray-900 dark:bg-gray-800 text-left hover:bg-gray-50 dark:hover:bg-gray-600"
-                                    data-modal-target="staticModal" data-modal-toggle="staticModal">
-                                    <td class="px-6 py-4">
-                                        Ayson, Arvin S.
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        8
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        09612635008
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        arvin.ayson@gmail.com
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        ********
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        July 31, 2023
-                                    </td>
-                                </tr>
-                                <tr
-                                    class="text-gray-900 dark:bg-gray-800 text-left hover:bg-gray-50 dark:hover:bg-gray-600">
-                                    <td class="px-6 py-4">
-                                        Desacola, Justin Paul D.
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        8
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        09126551323
-                                    </td>
                                     <td class="px-6 py-4">
                                         justin@gmail.com
                                     </td>
                                     <td class="px-6 py-4">
-                                        ********
+                                        justin123
                                     </td>
                                     <td class="px-6 py-4">
-                                        August 01, 2023
+                                        09612635220	
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        <span
+                                            class="bg-green-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+                                            &#x2713; </span><br>
+                                            2023-07-31
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <button type="button"
+                                            data-modal-target="popup-modal"
+                                            data-modal-toggle="popup-modal"
+                                            class="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Delete
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -585,9 +521,9 @@
                             d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                     <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Are you sure you want to
-                        delete this Student?</h3>
+                        Approved this Student?</h3>
                     <button data-modal-hide="popup-modal" type="button"
-                        class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                        class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                         Yes, I'm sure
                     </button>
                     <button data-modal-hide="popup-modal" type="button"
