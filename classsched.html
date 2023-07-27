@@ -51,13 +51,13 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default"><i
                                     class="fa fa-search"></i></span>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>Grade 7</option>
-                                        <option>Grade 8</option>
-                                        <option>Grade 9</option>
-                                        <option>Grade 10</option>
-                                        <option>Grade 11</option>
-                                        <option>Grade 12</option>
+                                    <select id="inputState1" class="form-select">
+                                        <option value="7" selected>Grade 7</option>
+                                        <option value="8">Grade 8</option>
+                                        <option value="9">Grade 9</option>
+                                        <option value="10">Grade 10</option>
+                                        <option value="11">Grade 11</option>
+                                        <option value="12">Grade 12</option>
                                       </select>
                         </div>
                     </div>
@@ -65,16 +65,16 @@
                         <div class="input-group mb-3">
                             
                             <span class="input-group-text" id="inputGroup-sizing-default">Section</span>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>All</option>
-                                        <option>Pearl</option>
-                                        <option>Diamond</option>
-                                        <option>Gold</option>
-                                        <option>Titanum</option>
-                                        <option>Nickel</option>
-                                        <option>ABM</option>
-                                        <option>HUMSS</option>
-                                        <option>STEM</option>
+                                    <select id="inputState2" class="form-select">
+                                        <option class="strand1">All</option>
+                                        <option class="strand1">Pearl</option>
+                                        <option class="strand1">Diamond</option>
+                                        <option class="strand1">Gold</option>
+                                        <option class="strand1">Titanum</option>
+                                        <option class="strand1">Nickel</option>
+                                        <option class="strand2">ABM</option>
+                                        <option class="strand2">HUMSS</option>
+                                        <option class="strand2">STEM</option>
                                       </select>
                         </div>
                     </div>
@@ -126,6 +126,24 @@
             </div>
         </di>
     </div>
+    <script>
+        $('#inputState1').change(function () {
+            var selectedText = $('#inputState1 option:selected').text();
+            var $element = $('.strand2');
+            var $element2 = $('.strand1');
+
+            console.log(selectedText);
+
+            if (selectedText == 'Grade 11' || selectedText == 'Grade 12' ) {
+                $element.css('display', 'list-item');
+                $element2.css('display', 'none');
+            }
+            else {
+                $element.css('display', 'none');
+                $element2.css('display', 'list-item');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -16,13 +16,13 @@
 
     <div class="container-fluid">
         <div class="row vh-100">
-            <div class="col-md-6 p-5 img">
+            <div class="col-md-7 p-5 img">
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5 width" style="margin: auto; width: 30%;">
 
                 <div class="row">
-                    <div class="col-md-12 alert p-5 rounded-2 mt-4">
+                    <div class="col-md-12 p-3 rounded-2">
 
                         <!-- <h4 class="text-left">
                             Northern Luzon Adventist College ACADEMY
@@ -57,12 +57,6 @@
                             <label for="floatingPassword">********</label>
                         </div>
                         <div class="row">
-                            <div class="col-md">
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                                  </div>
-                            </div>
                             <div class="col-md text-end mb-3">
                                 <div class="mb-3 form-check">
                                     <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
@@ -226,7 +220,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>1
         </div>
     </div>
 
@@ -234,10 +228,12 @@
         $(document).ready(function () {
             function changeBgImage() {
                 var $element = $('.img');
+                var $element2 = $('.width');
                 var windowWidth = $(window).width();
 
                 if (windowWidth < 768) { // You can adjust this value based on your desired breakpoint
                     $element.css('background-image', 'url("kape2.jpg")');
+                    $element2.css('width', 'auto');
                 } else {
                     $element.css('background-image', 'url("kape.jpg")');
                 }

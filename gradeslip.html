@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
 </head>
 
 <body>
@@ -92,12 +96,12 @@
                                     Summary</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="gradeslip.html"
                                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Grade
                                     Slip</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="schedule.html"
                                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Class
                                     Schedule</a>
                             </li>
@@ -169,7 +173,7 @@
                             Ayson, Arvin S.
                         </td>
                         <td class="px-6 py-4">
-                            8
+                            12
                         </td>
                         <td class="px-6 py-4">
                             107119060016
@@ -246,16 +250,12 @@
 
     <!-- Main modal -->
     <div id="defaultModal" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden  md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full" >
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 max-w-full" >
                 <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                        Arvin S. Ayson
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Grade 8 - Fortitude</span>
-                    </h3>
+                <div class="flex items-start justify-between p-3 border-b rounded-t dark:border-gray-600">
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                         data-modal-hide="defaultModal">
@@ -268,21 +268,56 @@
                     </button>
                 </div>
                 <!-- Modal body -->
-                <div class="p-6 space-y-6">
+                <div class="p-6 space-y-6" id="printMe">
 
-                    <div class="relative overflow-x-auto">
-                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <div class="relative p-3">
+
+                        <img class="h-auto max-w-full" src="header.jpg" />
+
+                        <div class="row">
+                            <h1 class="text-xl text-center text-blue-900 text-bold mb-3" style="font-weight: 600;">SENIOR HIGH SCHOOL - PROGRESS REPORT CARD</h1>
+                            <div class="col-md">
+                                <h1 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                                    Name: <b class="underline">Arvin S. Ayson</b>
+                                </h1>
+                            </div>
+                            <div class="col-md text-end">
+                                <h1 class="text-sm font-semibold text-gray-900  dark:text-white mb-3">
+                                    LRN: <b class="underline"> 107119060016</b>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md ">
+                                <h1 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                                    Strand & Section: <b class="underline"> G12 - STEM</b>
+                                </h1>
+                            </div>
+                            <div class="col-md text-end">
+                                <h1 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                                    Semester: <b class="underline">2nd</b>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table table-bordered">
                             <thead
                                 class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
-                                    <th scope="col" class="px-6 py-3 rounded-l-lg">
-                                        Subject
+                                    <th scope="col">
+                                        Learning Areas / Subjects
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Teacher
+                                        Midterm
                                     </th>
                                     <th scope="col" class="px-6 py-3 rounded-r-lg text-center">
-                                        Grade
+                                        Final
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 rounded-r-lg text-center">
+                                        Average
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 rounded-r-lg text-center">
+                                        Remarks
                                     </th>
                                 </tr>
                             </thead>
@@ -290,50 +325,131 @@
                                 <tr class="dark:bg-gray-800">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Filipino 8
+                                        Entrepreneurship
                                     </th>
                                     <td class="px-6 py-4">
-                                        Maria Clara
+                                        85
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        78
+                                        85
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        85
+                                    </td>
+                                    <td class="px-6 py-4 text-center text-green-400">
+
                                     </td>
                                 </tr>
                                 <tr class="dark:bg-gray-800">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        English 8
+                                        Practical Research 2 (Quantitative Research)
                                     </th>
                                     <td class="px-6 py-4">
-                                        Maria Clara
+                                        85
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        75
+                                        90
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        87.5
+                                    </td>
+                                    <td class="px-6 py-4 text-center text-yellow-300">
+
                                     </td>
                                 </tr>
                                 <tr class="dark:bg-gray-800">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Math 8
+                                        Work Immersion
                                     </th>
                                     <td class="px-6 py-4">
-                                        Crisostomo Ibarra
+                                        85
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        89
+                                        90
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        87.5
+                                    </td>
+                                    <td class="px-6 py-4 text-center text-yellow-300">
+
                                     </td>
                                 </tr>
                             </tbody>
+                            <tfoot>
+                                <tr
+                                    class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                    <td class="px-6 py-3 text-bold">General Average</td>
+                                    <td class="px-6 py-3"></td>
+                                    <td class="px-6 py-3"></td>
+                                    <th class="px-6 py-4 text-center text-bold">86.88</th>
+                                    <td class="px-6 py-4 text-center text-yellow-300"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <br>
+                        <h1 class="text-sm font-semibold text-gray-900 dark:text-white mb-3 text-center">
+                            <b>JOMAR MORENO BACANI, LPT</b> <br>
+                            STEM ADVISER
+                        </h1>
+                        <br>
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table table-bordered">
+                            <thead
+                                class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="row" class="text-center">
+                                        Parents / Guardians <br>
+                                        Signature
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        Midterm
+                                    </th>
+                                    
+                                    <th scope="col" class="px-6 py-3 rounded-r-lg text-center">
+                                        Final
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="dark:bg-gray-800">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        
+                                    </td>
+
+                                </tr>
+                                
+                            </tbody>
                         </table>
                     </div>
-
+                    <div class="w-full p-3 text-xs bg-green-100 border border-gray-200 rounded-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                        <b>Note:</b> 
+                        <i>This document shows our student's performance for the Second Semester of School Year 2023-2024. <br>
+                            It is not validand not official for any other purposes.
+                        </i>
+                    </div>
+                    <br>
+                        <h1 class="text-sm font-semibold text-gray-900 dark:text-white mb-3 text-center">
+                            <b>RUSS B. DEL CASTILLO, Ph.D.</b> <br>
+                            NLAC Academy Principal
+                        </h1>
+                    </div>
+                    
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="defaultModal" type="button"
+                    <!-- data-modal-hide="defaultModal" type="button"  -->
+                    <button onclick="printElementById('printMe')"
                         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Print</button>
                     <button data-modal-hide="defaultModal" type="button"
-                        class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
                 </div>
             </div>
         </div>
@@ -341,5 +457,6 @@
 
 
 </body>
+<script src="script.js"></script>
 
 </html>
