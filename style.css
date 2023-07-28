@@ -28,6 +28,13 @@
   /* background-color: #456390; */
 }
 
+.logo {
+  background-image: url("nlaclogo.png");
+  background-size: cover;
+  background-position: center center;
+  /* background-color: #456390; */
+}
+
 .table-success, .table-success > th, .table-success > td {
   background-color: #c3e6cb;
 }
